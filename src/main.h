@@ -2,8 +2,11 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void doIntro();
+char *getInput();
 void doOutro();
 
 #endif // MAIN_H
