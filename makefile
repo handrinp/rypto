@@ -1,6 +1,6 @@
 #------------- VARIABLES -------------#
 COMPILER=gcc
-COMPILE_FLAGS=-c -o
+COMPILE_FLAGS=-Wall -c -o
 LINK_FLAGS=-o
 
 #------------- BUILD MAKE TARGETS -------------#
