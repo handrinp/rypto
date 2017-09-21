@@ -4,10 +4,10 @@ COMPILE_FLAGS=-Wall -c -o
 LINK_FLAGS=-o
 
 #------------- BUILD MAKE TARGETS -------------#
-bin/rypto: obj obj/main.o
+bin/rypto: obj/main.o bin
 	$(COMPILER) obj/main.o $(LINK_FLAGS) bin/rypto
 
-obj/main.o: src/main.c
+obj/main.o: obj src/main.c
 	$(COMPILER) src/main.c $(COMPILE_FLAGS) obj/main.o
 
 obj:
@@ -21,4 +21,4 @@ run: bin/rypto
 	./bin/rypto
 
 clean:
-	rm -rf bin/* obj/*
+	rm -rf bin obj

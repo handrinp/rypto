@@ -14,12 +14,12 @@ void doIntro() {
 }
 
 char *getInput() {
-    size_t inputSize = 256;
-    char *input = malloc(inputSize * sizeof(char));
-    memset(input, 0, inputSize);
+    size_t n = 0;
+    char *input = NULL;
+    printf("n = %lu\n", n);
     printf("Input: ");
-    size_t maxReadSize = inputSize - 1;
-    getline(&input, &maxReadSize, stdin);
+    getline(&input, &n, stdin);
+    printf("n = %lu\n", n);
     return input;
 }
 
